@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:teamd/homepage.dart';
 import 'package:teamd/otp%20verification/verifyemail_page.dart';
 import 'package:teamd/otp%20verification/verifyopt_page.dart';
+import 'package:teamd/otp%20verification/verifyreset_page.dart';
 import 'package:teamd/pages/login_page.dart';
 import 'package:teamd/pages/signup_page.dart';
 

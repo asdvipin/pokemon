@@ -52,7 +52,7 @@ class _VerifyOtpPageState extends State<VerifyOtpPage> {
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           image: DecorationImage(
             image: AssetImage(
               "assets/images/otp8.png",
@@ -83,7 +83,7 @@ class _VerifyOtpPageState extends State<VerifyOtpPage> {
                   const SizedBox(
                     height: 40,
                   ),
-                  Text(
+                  const Text(
                     "Enter the 4 digit verification code received",
                     style: TextStyle(
                       color: Colors.white,
@@ -109,7 +109,7 @@ class _VerifyOtpPageState extends State<VerifyOtpPage> {
                   Row(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
-                      Text(
+                      const Text(
                         "Haven't received OTP yet?",
                         style: TextStyle(
                           color: Color.fromARGB(255, 188, 189, 189),
@@ -142,7 +142,7 @@ class _VerifyOtpPageState extends State<VerifyOtpPage> {
                   resendTime != 0
                       ? Text(
                           "You can resend OTP after ${strFormatting(resendTime)} second(s)",
-                          style: TextStyle(
+                          style: const TextStyle(
                             color: Colors.green,
                             fontSize: 16,
                           ),
@@ -155,7 +155,7 @@ class _VerifyOtpPageState extends State<VerifyOtpPage> {
                   ),
                   Text(
                     invalidotp ? "Invalid otp!" : "",
-                    style: TextStyle(
+                    style: const TextStyle(
                       fontSize: 20,
                       color: Color.fromARGB(255, 243, 96, 86),
                     ),
@@ -183,7 +183,7 @@ class _VerifyOtpPageState extends State<VerifyOtpPage> {
                       }
                       //
                     },
-                    child: Text(
+                    child: const Text(
                       "Verify",
                       style: TextStyle(
                         color: Colors.white,
@@ -208,7 +208,7 @@ myInputBox(BuildContext context, TextEditingController controller) {
     height: 60,
     width: 60,
     decoration: BoxDecoration(
-      color: Color.fromARGB(255, 132, 131, 131),
+      color: const Color.fromARGB(255, 132, 131, 131),
       border: Border.all(width: 0.5),
       borderRadius: const BorderRadius.all(
         Radius.circular(20),

@@ -24,7 +24,7 @@ class _SignupPageState extends State<SignupPage> {
       body: Container(
         width: double.infinity,
         height: double.infinity,
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
           image: DecorationImage(
             image: AssetImage(
               "assets/images/pokemon1.png",
@@ -36,16 +36,16 @@ class _SignupPageState extends State<SignupPage> {
         child: BackdropFilter(
           filter: ImageFilter.blur(sigmaX: 1.1, sigmaY: 1.1),
           child: Padding(
-            padding: EdgeInsets.all(10.0),
+            padding: const EdgeInsets.all(10.0),
             child: SingleChildScrollView(
               child: Form(
                 key: formKey,
                 child: Column(
                   children: [
-                    SizedBox(
+                    const SizedBox(
                       height: 60,
                     ),
-                    Text(
+                    const Text(
                       "SignUp",
                       style: TextStyle(
                         fontSize: 30,
@@ -53,11 +53,11 @@ class _SignupPageState extends State<SignupPage> {
                         color: Color.fromARGB(255, 248, 246, 246),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 50,
                     ),
                     Padding(
-                      padding: EdgeInsets.all(15.0),
+                      padding: const EdgeInsets.all(15.0),
                       child: Container(
                         height: 55,
                         decoration: BoxDecoration(
@@ -71,23 +71,23 @@ class _SignupPageState extends State<SignupPage> {
                                 borderRadius: BorderRadius.circular(10),
                               ),
                               labelText: "UserName",
-                              labelStyle: TextStyle(
+                              labelStyle: const TextStyle(
                                 fontSize: 14,
                                 color: Colors.white,
                               ),
-                              prefixIcon: Icon(
+                              prefixIcon: const Icon(
                                 Icons.person,
                                 color: Colors.white,
                               ),
                               hintText: "User name",
-                              hintStyle: TextStyle(
+                              hintStyle: const TextStyle(
                                 color: Color.fromARGB(255, 248, 245, 245),
                               )),
                         ),
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(15.0),
+                      padding: const EdgeInsets.all(15.0),
                       child: Container(
                         height: 55,
                         decoration: BoxDecoration(
@@ -101,23 +101,23 @@ class _SignupPageState extends State<SignupPage> {
                                 borderRadius: BorderRadius.circular(10),
                               ),
                               labelText: "Phone Number",
-                              labelStyle: TextStyle(
+                              labelStyle: const TextStyle(
                                 fontSize: 14,
                                 color: Colors.white,
                               ),
-                              prefixIcon: Icon(
+                              prefixIcon: const Icon(
                                 Icons.phone_android,
                                 color: Colors.white,
                               ),
                               hintText: "Phone Number",
-                              hintStyle: TextStyle(
+                              hintStyle: const TextStyle(
                                 color: Colors.white,
                               )),
                         ),
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(15.0),
+                      padding: const EdgeInsets.all(15.0),
                       child: Container(
                         height: 55,
                         decoration: BoxDecoration(
@@ -131,23 +131,23 @@ class _SignupPageState extends State<SignupPage> {
                                 borderRadius: BorderRadius.circular(10),
                               ),
                               labelText: "Email Id",
-                              labelStyle: TextStyle(
+                              labelStyle: const TextStyle(
                                 fontSize: 14,
                                 color: Colors.white,
                               ),
-                              prefixIcon: Icon(
+                              prefixIcon: const Icon(
                                 Icons.email_rounded,
                                 color: Colors.white,
                               ),
                               hintText: "Email Id",
-                              hintStyle: TextStyle(
+                              hintStyle: const TextStyle(
                                 color: Colors.white,
                               )),
                         ),
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(15.0),
+                      padding: const EdgeInsets.all(15.0),
                       child: Container(
                         height: 55,
                         decoration: BoxDecoration(
@@ -161,23 +161,23 @@ class _SignupPageState extends State<SignupPage> {
                                 borderRadius: BorderRadius.circular(10),
                               ),
                               labelText: "Password",
-                              labelStyle: TextStyle(
+                              labelStyle: const TextStyle(
                                 fontSize: 14,
                                 color: Colors.white,
                               ),
-                              prefixIcon: Icon(
+                              prefixIcon: const Icon(
                                 Icons.lock_clock_rounded,
                                 color: Colors.white,
                               ),
                               hintText: "Password",
-                              hintStyle: TextStyle(
+                              hintStyle: const TextStyle(
                                 color: Colors.white,
                               )),
                         ),
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.all(15.0),
+                      padding: const EdgeInsets.all(15.0),
                       child: Container(
                         height: 55,
                         decoration: BoxDecoration(
@@ -191,22 +191,22 @@ class _SignupPageState extends State<SignupPage> {
                                 borderRadius: BorderRadius.circular(10),
                               ),
                               labelText: "Confirm Password",
-                              labelStyle: TextStyle(
+                              labelStyle: const TextStyle(
                                 fontSize: 14,
                                 color: Colors.white,
                               ),
-                              prefixIcon: Icon(
+                              prefixIcon: const Icon(
                                 Icons.lock_open_rounded,
                                 color: Colors.white,
                               ),
                               hintText: "Confirm Password",
-                              hintStyle: TextStyle(
+                              hintStyle: const TextStyle(
                                 color: Colors.white,
                               )),
                         ),
                       ),
                     ),
-                    SizedBox(
+                    const SizedBox(
                       height: 20,
                     ),
                     ElevatedButton(
@@ -214,7 +214,7 @@ class _SignupPageState extends State<SignupPage> {
                           Navigator.of(context).push(
                             MaterialPageRoute(
                               builder: (context) {
-                                return LoginPage();
+                                return const LoginPage();
                               },
                             ),
                           );
@@ -222,7 +222,7 @@ class _SignupPageState extends State<SignupPage> {
                         style: ElevatedButton.styleFrom(
                           backgroundColor: const Color.fromARGB(255, 121, 117, 117),
                         ),
-                        child: Text(
+                        child: const Text(
                           "signup",
                           style: TextStyle(
                             color: Colors.white,
